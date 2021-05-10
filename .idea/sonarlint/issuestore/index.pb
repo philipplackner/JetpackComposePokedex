@@ -9,7 +9,5 @@ v
 Fapp/src/main/java/com/plcoding/jetpackcomposepokedex/ui/theme/Theme.kt,5\5\5522603c809ef8f581c1c619a7468a39c6eed139
 „
 Tapp/src/main/java/com/plcoding/jetpackcomposepokedex/data/models/PokedexListEntry.kt,5\6\562ac91f1937d861d721684bd9138b9be997bf75
-t
-Dapp/src/main/java/com/plcoding/jetpackcomposepokedex/MainActivity.kt,6\7\676dfdb83bd6080fc45efeafc6fdbb1b0830c67a
 @
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
