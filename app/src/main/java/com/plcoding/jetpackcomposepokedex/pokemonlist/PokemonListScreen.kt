@@ -130,14 +130,18 @@ fun PokemonList(
         } else {
             pokemonList.size / 2 + 1
         }
-        items(itemCount) {
-            if(it >= itemCount - 1 && !endReached && !isLoading && !isSearching) {
-                LaunchedEffect(key1 = true) {
+       LazyVerticalGrid(
+            columns = GridCells.Fixed(2),
+            contentPadding = PaddingValues(horizontal = 8.dp, vertical = 0.dp),
+            horizontalArrangement = Arrangement.spacedBy(16.dp),
+            verticalArrangement = Arrangement.spacedBy(16.dp)) {
+            items(itemCount) {
+                if (it >= itemCount - 1 && !endReached && !isLoading && !isSearching) {
                     viewModel.loadPokemonPaginated()
                 }
-            }
-            PokedexRow(rowIndex = it, entries = pokemonList, navController = navController)
+                PokedexEntry(entry = pokemonList[it], onClick = onCardClick)
         }
+    }
     }
 
     Box(
